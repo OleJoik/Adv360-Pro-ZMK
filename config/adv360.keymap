@@ -49,11 +49,11 @@
 
         layer_Symbols {
             bindings = <
- &kp F1            &kp F2             &kp F3            &kp F4             &kp F5       &kp F6            &kp F7                                                   &trans     &kp F7                &kp F8                 &kp F9               &kp F10                &kp F11          &kp F12
- &trans          &kp EXCL             &kp AT          &kp HASH         &kp DOLLAR  &kp PERCENT            &trans                                                   &trans  &kp CARET         &kp AMPERSAND           &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SCROLLLOCK
- &trans     &kp BACKSLASH           &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp EQUAL            &trans  &trans  &trans                  &trans  &trans   &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS             &kp COLON              &kp COLON           &trans
- &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans                            &trans                  &trans                   &kp UNDER        &kp UNDERSCORE                 &trans                &trans                 &trans           &trans
- &trans            &trans             &trans            &trans             &trans                         &trans  &trans  &trans                  &trans  &trans  &kp DEL                           &trans                 &trans                &trans                 &trans  &kp PRINTSCREEN
+ &kp F1            &kp F2             &kp F3            &kp F4             &kp F5       &kp F6            &kp F7                                                   &trans     &kp F7                &kp F8                 &kp F9         &kp F10                &kp F11          &kp F12
+ &trans          &kp EXCL             &kp AT          &kp HASH         &kp DOLLAR  &kp PERCENT            &trans                                                   &trans  &kp CARET         &kp AMPERSAND           &kp ASTERISK  &kp SCROLLLOCK  &kp RIGHT_PARENTHESIS       &kp INSERT
+ &trans     &kp BACKSLASH           &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp EQUAL            &trans  &trans  &trans                  &trans  &trans   &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp COLON        &kp PAUSE_BREAK           &trans
+ &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans                            &trans                  &trans                   &kp UNDER        &kp UNDERSCORE                 &trans          &trans                 &trans           &trans
+ &trans            &trans             &trans            &trans             &trans                         &trans  &trans  &trans                  &trans  &trans  &kp DEL                           &trans                 &trans          &trans                 &trans  &kp PRINTSCREEN
             >;
         };
 
