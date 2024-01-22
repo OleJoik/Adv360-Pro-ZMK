@@ -5,8 +5,4 @@
 *
 */
 
-#define HOST_OS 1
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/danish.dtsi"
-
 #include "adv360.keymap"
