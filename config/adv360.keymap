@@ -44,6 +44,29 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <30 31>;
+            layers = <0 1 2 3>;
+            require-prior-idle-ms = <150>;
+        };
+
+        paranthesisleft {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <41 42>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        rightparenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <42 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
