@@ -59,11 +59,11 @@
 
         symbols {
             bindings = <
-&trans  &trans     &trans             &trans            &trans             &trans          &trans                                      &trans  &trans     &trans                &trans                 &trans         &trans         &trans
-&trans  &kp TAB    &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT     &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &trans         &kp BACKSPACE  &trans
-&trans  &kp ESC    &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS        &none   &trans  &trans      &trans  &trans  &none   &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans         &trans
-&trans  &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp APOSTROPHE                  &trans      &trans                  &trans     &kp LESS_THAN         &kp GREATER_THAN       &trans         &to 2          &trans
-&trans  &trans     &trans             &trans            &trans                             &to 0   &trans  &trans      &trans  &trans  &to 3              &trans                &trans                 &trans         &trans         &trans
+&trans  &trans   &trans             &trans            &trans             &trans          &trans                                      &trans  &trans     &trans                &trans                 &trans         &trans         &trans
+&trans  &kp TAB  &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT     &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &trans         &kp BACKSPACE  &trans
+&trans  &kp ESC  &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS        &none   &trans  &trans      &trans  &trans  &none   &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans         &trans
+&trans  &trans   &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp APOSTROPHE                  &trans      &trans                  &kp TILDE  &kp LESS_THAN         &kp GREATER_THAN       &trans         &to 2          &trans
+&trans  &trans   &trans             &trans            &trans                             &to 0   &trans  &trans      &trans  &trans  &to 3              &trans                &trans                 &trans         &trans         &trans
             >;
         };
 
