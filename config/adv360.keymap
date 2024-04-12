@@ -104,13 +104,6 @@
             layers = <0 1 2 3>;
         };
 
-        exclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <48 30>;
-            require-prior-idle-ms = <150>;
-            layers = <0 2 3 1>;
-        };
-
         lt {
             bindings = <&lbrace_morph>;
             key-positions = <55 56>;
@@ -188,8 +181,8 @@
             layers = <0 1 2 3>;
         };
 
-        none {
-            bindings = <&none>;
+        exclamation {
+            bindings = <&kp EXCL>;
             key-positions = <49 31>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
