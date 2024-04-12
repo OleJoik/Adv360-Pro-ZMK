@@ -236,6 +236,60 @@
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
         };
+
+        carot {
+            bindings = <&kp CARET>;
+            key-positions = <22 40>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <23 41>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <24 42>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <40 54>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <41 55>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        unknown {
+            bindings = <&none>;
+            key-positions = <42 56>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <43 57>;
+            require-prior-idle-ms = <150>;
+            layers = <0 1 2 3>;
+        };
+
+        bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <44 58>;
+        };
     };
 
     keymap {
