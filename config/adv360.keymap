@@ -83,7 +83,8 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_W";
             #binding-cells = <0>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z MINUS UNDER BACKSPACE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 DELETE>;
+            continue-list = <MINUS UNDER BACKSPACE DELETE>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
     };
 
@@ -126,15 +127,8 @@
         };
 
         backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp COLON>;
             key-positions = <41 42 43>;
-            require-prior-idle-ms = <150>;
-            layers = <0 1 2 3>;
-        };
-
-        ctrl+z {
-            bindings = <&kp RC(Z)>;
-            key-positions = <47 48>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
         };
@@ -146,7 +140,7 @@
             layers = <0 1 2 3>;
         };
 
-        plus {
+        minus {
             bindings = <&kp MINUS>;
             key-positions = <48 49 50>;
             layers = <0 2 1 3>;
@@ -155,21 +149,14 @@
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <31 32>;
-            require-prior-idle-ms = <150>;
-            layers = <0 1 2 3>;
-        };
-
-        lcurly {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <48 49>;
+            key-positions = <32 30 31>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
         };
 
         rcurly {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <49 50>;
+            key-positions = <50 51>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
         };
@@ -181,8 +168,8 @@
             layers = <0 1 2 3>;
         };
 
-        doubleq {
-            bindings = <&kp DOUBLE_QUOTES>;
+        singleq {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <30 48>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
@@ -195,8 +182,8 @@
             layers = <0 1 2 3>;
         };
 
-        singlequote {
-            bindings = <&kp SINGLE_QUOTE>;
+        doubleq {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <32 50>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
@@ -230,8 +217,8 @@
             layers = <0 1 2 3>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        plus {
+            bindings = <&kp PLUS>;
             key-positions = <16 17 18>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
@@ -258,8 +245,8 @@
             layers = <0 1 2 3>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
+        rbtl {
+            bindings = <&none>;
             key-positions = <40 54>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
@@ -281,7 +268,7 @@
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <43 57>;
+            key-positions = <42 56>;
             require-prior-idle-ms = <150>;
             layers = <0 1 2 3>;
         };
@@ -295,6 +282,16 @@
             bindings = <&caps_w>;
             key-positions = <29 30 44 43>;
         };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <33 51>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 26>;
+        };
     };
 
     keymap {
@@ -302,11 +299,11 @@
 
         default {
             bindings = <
-&trans  &trans            &trans          &trans          &trans  &trans       &trans                                                     &mo 4         &trans       &trans       &trans           &trans           &trans               &trans
-&trans  &kp Q             &kp W           &kp E           &kp R   &kp T        &none                                                      &none         &kp Y        &kp U        &kp I            &kp O            &kp P                &trans
-&trans  &hm LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_ALT D  &kp F   &td EQUAL G  &none            &trans     &trans      &trans  &trans     &none         &td MINUS H  &kp J        &hm RIGHT_ALT K  &hm RIGHT_GUI L  &hm RSHFT SEMICOLON  &trans
-&trans  &mt LCTRL Z       &kp X           &kp C           &kp V   &td PLUS B                               &trans      &trans                           &kp N        &td UNDER M  &kp COMMA        &td EXCL PERIOD  &kp FSLH             &trans
-&trans  &trans            &trans          &trans          &trans               &lt 1 BACKSPACE  &kp SPACE  &trans      &trans  &kp ENTER  &lt 3 ESCAPE               &trans       &trans           &trans           &trans               &trans
+&trans  &trans            &trans          &trans      &trans  &trans  &trans                                                   &mo 4         &trans  &trans  &trans          &trans           &trans               &trans
+&trans  &kp Q             &kp W           &kp E       &kp R   &kp T   &none                                                    &none         &kp Y   &kp U   &kp I           &kp O            &kp P                &trans
+&trans  &hm LEFT_SHIFT A  &kp S           &kp D       &kp F   &kp G   &none          &trans     &trans      &trans  &trans     &none         &kp H   &kp J   &kp K           &kp L            &hm RSHFT SEMICOLON  &trans
+&trans  &hm LCTRL Z       &hm LEFT_GUI X  &hm LALT C  &kp V   &kp B                             &trans      &trans                           &kp N   &kp M   &hm RALT COMMA  &hm RGUI PERIOD  &hm RCTRL SLASH      &trans
+&trans  &trans            &trans          &trans      &trans          &kp BACKSPACE  &kp SPACE  &trans      &trans  &kp ENTER  &lt 3 ESCAPE          &trans  &trans          &trans           &trans               &trans
             >;
         };
 
