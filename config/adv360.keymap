@@ -91,13 +91,6 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp PLUS>;
-            key-positions = <30 31 32>;
-            layers = <0 1 2 3>;
-            require-prior-idle-ms = <150>;
-        };
-
         paranthesisleft {
             bindings = <&lparen_morph>;
             key-positions = <41 42>;
