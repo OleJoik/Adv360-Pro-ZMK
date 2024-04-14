@@ -78,6 +78,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        caps_w: caps_w {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_W";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z MINUS UNDER BACKSPACE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 DELETE>;
+        };
     };
 
     combos {
@@ -285,7 +292,7 @@
         };
 
         capsword {
-            bindings = <&caps_word>;
+            bindings = <&caps_w>;
             key-positions = <29 30 44 43>;
         };
     };
