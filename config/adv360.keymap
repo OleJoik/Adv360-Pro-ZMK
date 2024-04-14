@@ -283,6 +283,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <44 58>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <29 30 44 43>;
+        };
     };
 
     keymap {
