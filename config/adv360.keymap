@@ -188,6 +188,57 @@
             bindings = <&kp EQUAL>;
             key-positions = <40 41>;
         };
+
+        m_parenthesis {
+            bindings = <&parenthesis>;
+            key-positions = <18 23>;
+        };
+
+        brackets {
+            bindings = <&brackets>;
+            key-positions = <17 24>;
+        };
+
+        curlys {
+            bindings = <&curlys>;
+            key-positions = <25 16>;
+        };
+
+        m_angles {
+            bindings = <&angles>;
+            key-positions = <26 15>;
+        };
+    };
+
+    macros {
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "PARENTHESIS";
+            wait-ms = <0>;
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
+            label = "BRACKETS";
+        };
+
+        curlys: curlys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "CURLYS";
+        };
+
+        angles: angles {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            label = "ANGLES";
+        };
     };
 
     keymap {
