@@ -235,6 +235,7 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
             label = "BRACKETS";
+            wait-ms = <0>;
         };
 
         curlys: curlys {
@@ -242,6 +243,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "CURLYS";
+            wait-ms = <0>;
         };
 
         angles: angles {
@@ -249,6 +251,7 @@
             #binding-cells = <0>;
             bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
             label = "ANGLES";
+            wait-ms = <0>;
         };
 
         mail_address: mail_address {
@@ -256,6 +259,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp O &kp L &kp E &kp DOT &kp J &kp A &kp K &kp O &kp B &kp DOT &kp O &kp L &kp S &kp E &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "MAIL_ADDRESS";
+            wait-ms = <0>;
         };
     };
 
