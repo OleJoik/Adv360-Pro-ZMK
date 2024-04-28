@@ -289,13 +289,6 @@
             label = "MAIL_ADDRESS";
             wait-ms = <5>;
         };
-
-        unicode_ae: unicode_ae {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0 &kp N0 &kp E &kp N6>;
-            label = "UNICODE_AE";
-        };
     };
 
     keymap {
