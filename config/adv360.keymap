@@ -10,15 +10,14 @@
  */
 
 #define HOST_OS 1
-#include "../zmk-nodefree-config/helper.h"
 
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/danish.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "../zmk-nodefree-config/international_chars/danish.dtsi"
-
 
 &sl { release-after-ms = <2000>; };
 
@@ -219,6 +218,18 @@
             bindings = <&angles>;
             key-positions = <26 15>;
         };
+
+        c_excl {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <31 42>;
+            require-prior-idle-ms = <120>;
+        };
+
+        c_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <30 43>;
+            require-prior-idle-ms = <120>;
+        };
     };
 
     macros {
@@ -259,7 +270,14 @@
             #binding-cells = <0>;
             bindings = <&none &kp O &kp L &kp E &kp DOT &kp J &kp A &kp K &kp O &kp B &kp DOT &kp O &kp L &kp S &kp E &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "MAIL_ADDRESS";
-            wait-ms = <0>;
+            wait-ms = <5>;
+        };
+
+        unicode_ae: unicode_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0 &kp E &kp N6>;
+            label = "UNICODE_AE";
         };
     };
 
@@ -278,11 +296,11 @@
 
         symbols {
             bindings = <
-&trans  &kp F1         &kp F2             &kp F3            &kp F4             &kp F5       &trans                                      &trans  &kp F6     &kp F7                &kp F8                 &kp F9           &kp F10         &kp F11
-&trans  &kp EXCL       &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &dk_oe   &dk_aa         &kp F12
-&trans  &kp BACKSLASH  &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &none   &trans  &trans      &trans  &trans  &none   &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &dk_ae         &trans
-&trans  &kp APOS       &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS                     &trans      &trans                  &kp UNDER  &kp LESS_THAN         &kp GREATER_THAN       &trans           &kp QUESTION    &trans
-&trans  &trans         &trans             &trans            &trans                          &trans  &trans  &trans      &trans  &trans  &trans             &trans                &trans                 &trans           &trans          &trans
+&trans  &kp F1         &kp F2             &kp F3            &kp F4             &kp F5       &trans                                      &trans  &kp F6     &kp F7                &kp F8                 &kp F9  &kp F10       &kp F11
+&trans  &kp EXCL       &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &dk_oe  &dk_aa        &kp F12
+&trans  &kp BACKSLASH  &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &none   &trans  &trans      &trans  &trans  &none   &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &dk_ae        &trans
+&trans  &kp APOS       &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS                     &trans      &trans                  &kp UNDER  &kp LESS_THAN         &kp GREATER_THAN       &trans  &kp QUESTION  &trans
+&trans  &trans         &trans             &trans            &trans                          &trans  &trans  &trans      &trans  &trans  &trans             &trans                &trans                 &trans  &trans        &trans
             >;
         };
 
