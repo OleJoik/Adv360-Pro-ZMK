@@ -276,8 +276,8 @@
         symbols {
             bindings = <
 &trans  &kp F1         &kp F2             &kp F3            &kp F4             &kp F5       &trans                                      &trans  &kp F6     &kp F7                &kp F8                 &kp F9           &kp F10         &kp F11
-&trans  &kp EXCL       &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &kp PAUSE_BREAK  &kp INSERT      &kp F12
-&trans  &kp BACKSLASH  &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &none   &trans  &trans      &trans  &trans  &none   &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &kp SCROLLLOCK  &trans
+&trans  &kp EXCL       &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPERSAND         &kp ASTERISK           &dk_oe   &dk_aa         &kp F12
+&trans  &kp BACKSLASH  &kp PIPE           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &none   &trans  &trans      &trans  &trans  &none   &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &dk_ae         &trans
 &trans  &kp APOS       &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS                     &trans      &trans                  &kp UNDER  &kp LESS_THAN         &kp GREATER_THAN       &trans           &kp QUESTION    &trans
 &trans  &trans         &trans             &trans            &trans                          &trans  &trans  &trans      &trans  &trans  &trans             &trans                &trans                 &trans           &trans          &trans
             >;
