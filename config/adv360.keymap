@@ -9,6 +9,7 @@
  * edit it directly.
  */
 
+#define HOST_OS 1
 #include "../zmk-nodefree-config/helper.h"
 
 #include <behaviors.dtsi>
@@ -18,8 +19,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "../zmk-nodefree-config/international_chars/danish.dtsi"
 
-#define HOST_OS 1  // set to 1 for Linux, default is 0 (Windows)
-#include helper.h
 
 &sl { release-after-ms = <2000>; };
 
