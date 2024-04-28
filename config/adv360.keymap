@@ -178,7 +178,6 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
-            require-prior-idle-ms = <100>;
         };
 
         equal_left {
