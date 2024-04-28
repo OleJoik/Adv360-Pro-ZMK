@@ -21,10 +21,7 @@
 ZMK_UNICODE_PAIR(dk_ae,   N0, N0,  E, N6,   N0, N0,  C, N6) // æ/Æ
 ZMK_UNICODE_PAIR(dk_oe,   N0, N0,  F, N8,   N0, N0,  D, N8) // ø/Ø
 ZMK_UNICODE_PAIR(dk_aa,   N0, N0,  E, N5,   N0, N0,  C, N5) // å/Å
-
 &sl { release-after-ms = <2000>; };
-
-
 
 / {
     behaviors {
@@ -290,7 +287,7 @@ ZMK_UNICODE_PAIR(dk_aa,   N0, N0,  E, N5,   N0, N0,  C, N5) // å/Å
 
         default {
             bindings = <
-&trans      &kp N1            &kp N2          &kp N3      &kp N4  &kp N5  &trans                                                          &mo 3         &kp N6  &kp N7  &kp N8          &kp N9           &kp N0                &trans
+&trans      &kp N1            &kp N2          &kp N3      &kp N4  &kp N5  &trans                                                          &mo 3         &kp N6  &kp N7  &kp N8          &kp N9           &kp N0                &kp BACKSPACE
 &kp TAB     &kp Q             &kp W           &kp E       &kp R   &kp T   &none                                                           &none         &kp Y   &kp U   &kp I           &kp O            &kp P                 &trans
 &kp ESCAPE  &hm LEFT_SHIFT A  &kp S           &kp E       &kp F   &kp G   &none            &trans     &trans      &trans  &trans          &none         &kp H   &kp J   &kp K           &kp L            &hm RSHIFT SEMICOLON  &trans
 &kp LSHIFT  &hm LCTRL Z       &hm LEFT_GUI X  &hm LALT C  &kp V   &kp B                               &trans      &trans                                &kp N   &kp M   &hm RALT COMMA  &hm RGUI PERIOD  &hm RCTRL SLASH       &trans
