@@ -246,6 +246,13 @@
             bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
             label = "ANGLES";
         };
+
+        mail_address: mail_address {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp O &kp L &kp E &kp DOT &kp J &kp A &kp K &kp O &kp B &kp DOT &kp O &kp L &kp S &kp E &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL_ADDRESS";
+        };
     };
 
     keymap {
@@ -293,11 +300,11 @@
 
         function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans         &trans  &trans  &trans  &trans                                      &trans  &trans  &trans         &trans  &trans  &trans   &trans
+&trans  &kp F1  &kp F2         &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6  &kp F7         &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans         &trans  &trans  &kp F11  &trans
+&trans  &trans  &kp LS(LG(Q))  &trans  &trans  &trans                  &trans      &trans                  &trans  &mail_address  &trans  &trans  &kp F12  &trans
+&trans  &trans  &trans         &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans  &trans  &trans   &trans
             >;
         };
     };
