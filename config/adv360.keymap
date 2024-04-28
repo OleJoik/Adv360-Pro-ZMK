@@ -230,6 +230,12 @@
             key-positions = <30 43>;
             require-prior-idle-ms = <120>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <30 31>;
+            require-prior-idle-ms = <120>;
+        };
     };
 
     macros {
