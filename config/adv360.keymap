@@ -43,7 +43,7 @@
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <32 31>;
+            key-positions = <32 41>;
             require-prior-idle-ms = <120>;
         };
 
@@ -105,21 +105,18 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <23 41>;
             require-prior-idle-ms = <120>;
-            
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <24 42>;
             require-prior-idle-ms = <120>;
-            
         };
 
         under {
             bindings = <&kp UNDERSCORE>;
             key-positions = <55 56>;
             require-prior-idle-ms = <120>;
-            
         };
 
         plus {
@@ -142,13 +139,13 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <33 51>;
+            key-positions = <15 29>;
             require-prior-idle-ms = <120>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <15 16 17>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <120>;
         };
 
@@ -164,21 +161,9 @@
             require-prior-idle-ms = <120>;
         };
 
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <48 49>;
-            require-prior-idle-ms = <120>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <49 50>;
-            require-prior-idle-ms = <120>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <17 18>;
+            key-positions = <31 32>;
             require-prior-idle-ms = <120>;
         };
 
@@ -192,6 +177,16 @@
             bindings = <&kp ENTER>;
             key-positions = <43 44>;
             require-prior-idle-ms = <120>;
+        };
+
+        equal_left {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 33>;
+        };
+
+        equal_right {
+            bindings = <&kp EQUAL>;
+            key-positions = <40 41>;
         };
     };
 
