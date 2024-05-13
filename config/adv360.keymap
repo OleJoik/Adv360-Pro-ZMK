@@ -165,7 +165,7 @@ ZMK_UNICODE_PAIR(dk_aa,   N0, N0,  E, N5,   N0, N0,  C, N5) // å/Å
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <42 43>;
+            key-positions = <56 57>;
             require-prior-idle-ms = <120>;
         };
 
