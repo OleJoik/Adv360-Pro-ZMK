@@ -37,7 +37,7 @@
         };
 
         add {
-            bindings = <&kp LS(MINUS)>;
+            bindings = <&kp MINUS>;
             key-positions = <41 55>;
         };
 
