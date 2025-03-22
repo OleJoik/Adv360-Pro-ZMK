@@ -45,6 +45,11 @@
             bindings = <&kp ENTER>;
             key-positions = <30 31 32>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
