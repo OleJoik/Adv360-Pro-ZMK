@@ -28,6 +28,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        multiply {
+            bindings = <&kp PIPE>;
+            key-positions = <42 56>;
+        };
+
+        add {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <41 55>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <30 31 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
